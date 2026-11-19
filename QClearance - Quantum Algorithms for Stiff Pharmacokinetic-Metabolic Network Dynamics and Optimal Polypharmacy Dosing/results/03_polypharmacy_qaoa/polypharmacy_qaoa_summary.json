@@ -1,0 +1,30 @@
+{
+  "ground_state_energy_dense_10drug": -8.996,
+  "worst_case_simultaneous_energy": 15.2067,
+  "simultaneous_cyp3a4_ddi_sum": 21.005,
+  "staggered_osimertinib_window_ddi_sum": 1.3061,
+  "cyp3a4_co_inhibition_reduction_pct": 93.78,
+  "p2_approximation_ratios": {
+    "depth_p": 2.0,
+    "cx_gates_1x": 44.0,
+    "circuit_depth_1x": 59.0,
+    "std_qaoa_noiseless_ar": 0.8063,
+    "hh_cd_qaoa_noiseless_ar": 0.893,
+    "std_qaoa_qpu_raw_ar": 0.7825,
+    "hh_cd_qaoa_qpu_raw_ar": 0.8619,
+    "hh_cd_qaoa_qpu_mitigated_ar": 0.8932
+  },
+  "mps_100q_results": {
+    "n_qubits": 100.0,
+    "heavy_hex_edges": 123.0,
+    "native_isa_depth": 1079.0,
+    "native_isa_cz_gates": 492.0,
+    "dense_routed_isa_depth": 5600.0,
+    "dense_routed_isa_cz_gates": 8487.0,
+    "cz_gate_reduction_factor": 17.25,
+    "mps_std_qaoa_mean_ar": 0.7999,
+    "mps_hh_cd_qaoa_mean_ar": 0.8826,
+    "mps_std_qaoa_best_sample_ar": 0.9216,
+    "mps_hh_cd_qaoa_best_sample_ar": 0.983
+  }
+}

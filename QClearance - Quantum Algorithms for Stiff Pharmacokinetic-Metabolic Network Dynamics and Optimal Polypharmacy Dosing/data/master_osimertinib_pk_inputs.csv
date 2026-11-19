@@ -1,0 +1,11 @@
+parameter_symbol,description,value,units,original_median,original_units,total_rows_in_file,numeric_rows_used,source_folder,source_file,chembl_id
+IC50_EGFR_mutant_uM,Osimertinib potency against mutant EGFR (T790M/L858R),0.0048,uM,4.8,nM,80,80,02_ChEMBL_Osimertinib_Polypharmacy,osimertinib_bioactivity_CHEMBL3353410.json,CHEMBL3353410
+IC50_EGFR_wildtype_uM,Osimertinib off-target potency against wild-type EGFR,0.1115,uM,111.5,nM,43,42,02_ChEMBL_Osimertinib_Polypharmacy,osimertinib_bioactivity_CHEMBL3353410.json,CHEMBL3353410
+T12_clinical_NSCLC_h,Apparent terminal half-life in NSCLC patients (oral qd),55.0,h,55.0,hr,1,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+CL_apparent_NSCLC_L_h,Apparent systemic oral clearance (CL/F) in NSCLC patients,14.2,L/h,14.2,L/hr,1,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+CLint_HLM_mL_min_g,Intrinsic clearance in human liver microsomes at 3 uM,4.1,mL/min/g_liver,4.1,mL.min-1.g-1,1,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+k_hep_turnover_h_inv,First-order hepatic turnover rate from human hepatocyte t1/2 (3.0 h),0.23105,h^-1,3.0,hr (t1/2),1,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+k_inact_covalent_h_inv,Covalent Michael-addition rate constant from GSH reactivity t1/2 (2.017 h),0.34365,h^-1,2.017,hr (t1/2),1,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+Cmax_reference_uM,Median peak concentration across ChEMBL PK studies,0.179535,uM,179.535,nM,8,8,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+Tmax_oral_median_h,Median time to peak plasma concentration after oral dosing,6.0,h,6.0,hr,5,5,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410
+AUC_reference_ng_h_mL,Median exposure (AUC) across ChEMBL PK records,796.0,ng*h/mL,796.0,ng.hr.mL-1,13,13,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json,CHEMBL3353410

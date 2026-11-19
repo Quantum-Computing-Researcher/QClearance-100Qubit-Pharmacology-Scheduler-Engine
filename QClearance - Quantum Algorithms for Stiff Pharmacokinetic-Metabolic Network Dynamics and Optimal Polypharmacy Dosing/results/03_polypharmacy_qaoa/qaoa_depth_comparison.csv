@@ -1,0 +1,5 @@
+depth_p,cx_gates_1x,circuit_depth_1x,std_qaoa_noiseless_ar,hh_cd_qaoa_noiseless_ar,std_qaoa_qpu_raw_ar,hh_cd_qaoa_qpu_raw_ar,hh_cd_qaoa_qpu_mitigated_ar
+1,22,32,0.7492,0.8327,0.7326,0.8112,0.831
+2,44,59,0.8063,0.893,0.7825,0.8619,0.8932
+3,66,86,0.837,0.9129,0.8048,0.8697,0.9071
+4,88,113,0.8618,0.9623,0.8233,0.9032,0.9524

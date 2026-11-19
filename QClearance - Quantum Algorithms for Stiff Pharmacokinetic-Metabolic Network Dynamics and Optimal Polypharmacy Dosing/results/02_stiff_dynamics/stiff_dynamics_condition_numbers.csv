@@ -1,0 +1,5 @@
+n_qubits,hilbert_dimension,time_slices,raw_condition_number,nondim_condition_number,preconditioned_condition_number,compression_factor_vs_raw,compression_factor_vs_nondim
+6,64,8,8327124.87,6076513.52,9.35,890780.7,650025.2
+8,256,32,1672059.85,1262559.26,44.55,37532.7,28340.6
+10,1024,128,411550.43,314069.09,301.14,1366.7,1042.9
+12,4096,512,121543.26,92999.1,2676.37,45.4,34.7

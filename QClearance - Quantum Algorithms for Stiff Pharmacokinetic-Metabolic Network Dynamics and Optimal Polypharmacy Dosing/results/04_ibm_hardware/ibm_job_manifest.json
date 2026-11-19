@@ -1,0 +1,177 @@
+{
+  "backend_name": "ibm_marrakesh",
+  "backend_num_qubits": 156,
+  "job_id": "dblf0qhkbkrc73cnk6mg",
+  "shots": 4096,
+  "error_suppression": [
+    "XX_dynamical_decoupling_skip_reset",
+    "pauli_gate_twirling",
+    "measurement_twirling",
+    "same_batch_8q_readout_calibration",
+    "post_transpile_barrier_protected_1x_3x_2Q_ZNE"
+  ],
+  "transpiled_circuits": [
+    {
+      "name": "vqlds_8q_ro0",
+      "measured_qubits": 8,
+      "physical_qubit_indices": [
+        104,
+        105,
+        106,
+        107,
+        97,
+        87,
+        86,
+        85
+      ],
+      "isa_depth": 2,
+      "gate_counts": {
+        "id": 8,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_ro1",
+      "measured_qubits": 8,
+      "physical_qubit_indices": [
+        104,
+        105,
+        106,
+        107,
+        97,
+        87,
+        86,
+        85
+      ],
+      "isa_depth": 2,
+      "gate_counts": {
+        "x": 8,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_fold1",
+      "measured_qubits": 8,
+      "physical_qubit_indices": [
+        104,
+        105,
+        106,
+        107,
+        97,
+        87,
+        86,
+        85
+      ],
+      "isa_depth": 81,
+      "gate_counts": {
+        "sx": 240,
+        "rz": 160,
+        "cz": 56,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_fold3",
+      "measured_qubits": 8,
+      "physical_qubit_indices": [
+        104,
+        105,
+        106,
+        107,
+        97,
+        87,
+        86,
+        85
+      ],
+      "isa_depth": 113,
+      "gate_counts": {
+        "sx": 240,
+        "cz": 168,
+        "rz": 160,
+        "barrier": 113,
+        "measure": 8
+      }
+    },
+    {
+      "name": "hh_cd_qaoa_10q_fold1",
+      "measured_qubits": 10,
+      "physical_qubit_indices": [
+        105,
+        104,
+        108,
+        87,
+        97,
+        106,
+        107,
+        109,
+        118,
+        129
+      ],
+      "isa_depth": 154,
+      "gate_counts": {
+        "sx": 207,
+        "rz": 144,
+        "cz": 86,
+        "x": 14,
+        "measure": 10,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "hh_cd_qaoa_10q_fold3",
+      "measured_qubits": 10,
+      "physical_qubit_indices": [
+        105,
+        104,
+        108,
+        87,
+        97,
+        106,
+        107,
+        109,
+        118,
+        129
+      ],
+      "isa_depth": 245,
+      "gate_counts": {
+        "cz": 258,
+        "sx": 207,
+        "barrier": 173,
+        "rz": 144,
+        "x": 14,
+        "measure": 10
+      }
+    },
+    {
+      "name": "hh_cd_qaoa_50q",
+      "measured_qubits": 50,
+      "physical_qubit_indices": "50_physical_qubits",
+      "isa_depth": 573,
+      "gate_counts": {
+        "sx": 1277,
+        "rz": 817,
+        "cz": 577,
+        "x": 81,
+        "measure": 50,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "hh_cd_qaoa_100q",
+      "measured_qubits": 100,
+      "physical_qubit_indices": "100_physical_qubits",
+      "isa_depth": 1195,
+      "gate_counts": {
+        "sx": 2732,
+        "rz": 1681,
+        "cz": 1252,
+        "x": 160,
+        "measure": 100,
+        "barrier": 1
+      }
+    }
+  ]
+}

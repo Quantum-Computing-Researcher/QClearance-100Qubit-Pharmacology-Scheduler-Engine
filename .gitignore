@@ -1,0 +1,26 @@
+# Exclude research paper manuscripts and LaTeX build artifacts
+*.tex
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Python byte-compiled / cache / virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# OS & Editor temporary files
+.DS_Store
+Thumbs.db
+~$*.xlsx

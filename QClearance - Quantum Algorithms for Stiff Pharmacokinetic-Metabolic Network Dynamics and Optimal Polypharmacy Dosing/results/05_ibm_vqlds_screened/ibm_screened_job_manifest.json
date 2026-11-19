@@ -1,0 +1,121 @@
+{
+  "backend_name": "ibm_marrakesh",
+  "backend_num_qubits": 156,
+  "job_id": "dblfd858ft8s738t086g",
+  "shots": 16384,
+  "excluded_prior_tls_qubits": [
+    86,
+    87
+  ],
+  "selected_physical_qubits": [
+    44,
+    43,
+    56,
+    63,
+    64,
+    65,
+    77,
+    85
+  ],
+  "calibrated_readout_errors": [
+    0.00439,
+    0.00537,
+    0.01709,
+    0.0249,
+    0.01953,
+    0.02393,
+    0.01074,
+    0.01416
+  ],
+  "calibrated_2q_errors": [
+    0.00165,
+    0.00223,
+    0.00217,
+    0.00175,
+    0.00212,
+    0.00425,
+    0.00342
+  ],
+  "transpiled_circuits": [
+    {
+      "name": "vqlds_8q_ro0",
+      "physical_qubit_indices": [
+        44,
+        43,
+        56,
+        63,
+        64,
+        65,
+        77,
+        85
+      ],
+      "isa_depth": 2,
+      "gate_counts": {
+        "id": 8,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_ro1",
+      "physical_qubit_indices": [
+        44,
+        43,
+        56,
+        63,
+        64,
+        65,
+        77,
+        85
+      ],
+      "isa_depth": 2,
+      "gate_counts": {
+        "x": 8,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_fold1",
+      "physical_qubit_indices": [
+        44,
+        43,
+        56,
+        63,
+        64,
+        65,
+        77,
+        85
+      ],
+      "isa_depth": 81,
+      "gate_counts": {
+        "sx": 240,
+        "rz": 160,
+        "cz": 56,
+        "measure": 8,
+        "barrier": 1
+      }
+    },
+    {
+      "name": "vqlds_8q_fold3",
+      "physical_qubit_indices": [
+        44,
+        43,
+        56,
+        63,
+        64,
+        65,
+        77,
+        85
+      ],
+      "isa_depth": 113,
+      "gate_counts": {
+        "sx": 240,
+        "cz": 168,
+        "rz": 160,
+        "barrier": 113,
+        "measure": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+n_qubits,heavy_hex_edges,native_isa_depth,native_isa_cz_gates,dense_routed_isa_depth,dense_routed_isa_cz_gates,cz_gate_reduction_factor,mps_std_qaoa_mean_ar,mps_hh_cd_qaoa_mean_ar,mps_std_qaoa_best_sample_ar,mps_hh_cd_qaoa_best_sample_ar
+10,11,179,44,592,375,8.52,0.8027,0.8906,1.0,1.0
+36,43,439,172,2166,2378,13.83,0.8031,0.8945,0.9953,1.0
+50,60,579,240,3217,3787,15.78,0.8024,0.8849,0.9733,0.9911
+72,88,799,352,3736,5685,16.15,0.8022,0.8873,0.9725,0.9878
+100,123,1079,492,5600,8487,17.25,0.7999,0.8826,0.9216,0.983

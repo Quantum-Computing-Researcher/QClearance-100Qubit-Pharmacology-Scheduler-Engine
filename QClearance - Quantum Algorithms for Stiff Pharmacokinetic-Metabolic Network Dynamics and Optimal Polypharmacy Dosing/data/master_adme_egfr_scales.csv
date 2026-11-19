@@ -1,0 +1,8 @@
+parameter_group,metric,value,mean_value,units,total_rows_in_file,numeric_rows_used,source_folder,source_file,identifier
+Hepatocyte_CLint_Distribution,Median intrinsic clearance,19.0,42.9004,uL/min/1e6_cells,1213,1213,01_TDC_ADME_Clearance,clearance_hepatocyte_az.csv,AstraZeneca_TDC_Hepatocyte
+Microsome_CLint_Distribution,Median microsomal clearance,12.735,34.2216,uL/min/mg_protein,1102,1102,01_TDC_ADME_Clearance,clearance_microsome_az.csv,AstraZeneca_TDC_Microsome
+Human_Terminal_HalfLife,Median clinical half-life,4.2,18.2129,h,667,667,01_TDC_ADME_Clearance,half_life_obach.csv,Obach_FDA_HalfLife
+CYP3A4_Inhibition_Prevalence,Active CYP3A4 inhibitor fraction,0.4145,0.4145,fraction,12328,12328,01_TDC_ADME_Clearance,cyp3a4_veith.csv,PubChem_Veith_CYP3A4
+ChEMBL_HomoSapiens_CLint,Median hepatocyte CLint,7.3,63.6426,uL/min/1e6_cells,53,39,01_TDC_ADME_Clearance,human_hepatic_intrinsic_clearance_CLint.json,ChEMBL_Homo_sapiens_CLint
+EGFR_Receptor_Kd,Median equilibrium Kd,7.05,5.594533,uM (from nM),841,830,04_EGFR_Kinase_Kinetics,egfr_kinase_kinetics_CHEMBL203.json.json,CHEMBL203
+EGFR_Receptor_Ki,Median inhibition constant Ki,1.8,164.284838,uM (from nM),159,121,04_EGFR_Kinase_Kinetics,egfr_kinase_kinetics_CHEMBL203.json.json,CHEMBL203

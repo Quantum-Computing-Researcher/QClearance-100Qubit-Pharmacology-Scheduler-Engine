@@ -1,0 +1,11 @@
+drug_node,chembl_id,drug_name,clinical_role,extracted_potency_uM,original_median_nM,measurement_type,therapeutic_conc_uM,elimination_t12_h,hepatic_ddi_ratio_I_over_Ki,total_rows_in_file,numeric_rows_used,source_folder,source_file
+D1,CHEMBL3353410,Osimertinib,EGFR-TKI Oncology Anchor,3.0,3000.0,HLM Substrate Conc (3 uM),0.18,55.0,0.06,65,1,03_Clinical_PK_Parameters,osimertinib_clinical_pk_parameters.json
+D2,CHEMBL157101,Ketoconazole,Antifungal (Strong CYP3A4 Inhibitor),0.03,30.0,Ki (CYP3A4),0.45,3.3,15.0,7,6,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D3,CHEMBL163,Ritonavir,Antiviral Protease Booster,0.1,100.0,Ki (CYP3A4),0.38,4.0,3.8,3,2,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D4,CHEMBL729,Lopinavir,Antiviral Co-Medication,0.705,705.0,Ki (CYP3A4),0.52,6.0,0.7376,2,2,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D5,CHEMBL23,Diltiazem,Calcium-Channel Blocker (Cardiac),1.35,1350.0,Ki (CYP3A4),0.25,3.5,0.1852,3,2,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D6,CHEMBL36148,(S)-Verapamil,Antiarrhythmic / Antihypertensive,2.18,2180.0,Ki (CYP3A4),0.21,4.0,0.0963,2,2,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D7,CHEMBL1741,Clarithromycin,Macrolide Antibiotic,5.49,5490.0,Ki (CYP3A4),1.15,5.0,0.2095,2,1,02_ChEMBL_Osimertinib_Polypharmacy,cyp3a4_polypharmacy_Ki_CHEMBL340.json
+D8,CHEMBL231779,Apixaban,Factor Xa Anticoagulant,0.20025,200.25,IC50 Median (nM),0.18,12.0,0.8989,38,14,03_Clinical_PK_Parameters,polypharmacy_comedications_pk_ki.json
+D9,CHEMBL1487,Atorvastatin,HMG-CoA Reductase Statin,5.45,5450.0,IC50 Median (nM),0.045,14.0,0.0083,355,82,03_Clinical_PK_Parameters,polypharmacy_comedications_pk_ki.json
+D10,CHEMBL655,Midazolam,CYP3A4 Probe Sedative,41.72,41720.0,IC50 Median (nM),0.384,2.5,0.0092,116,12,03_Clinical_PK_Parameters,polypharmacy_comedications_pk_ki.json

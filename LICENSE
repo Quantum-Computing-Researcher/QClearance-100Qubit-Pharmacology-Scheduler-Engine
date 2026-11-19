@@ -1,0 +1,139 @@
+DUAL LICENSE AGREEMENT — QCLEARANCE FRAMEWORK
+(QClearance-100Qubit-Pharmacology-Scheduler-Engine)
+
+Copyright (c) 2026 Rehan Arqam. All rights reserved.
+
+================================================================================
+CONDITION OF ACCESS & DUAL-LICENSE ARCHITECTURE
+================================================================================
+Access to, downloading, copying, compiling, executing, or evaluating the
+QClearance framework—including its source code, quantum circuits, Oseen–Carleman
+Padé-(1,2) stiff ODE operators, three-stage analytical preconditioners,
+multiresolution Brickwall VQLS solvers, Heavy-Hex Counterdiabatic QAOA
+(HH-CD-QAOA) polypharmacy schedulers, closed-loop Two-Level System (TLS) readout
+screening protocols, and curated pharmacokinetic datasets—is governed by a
+strict Dual-License model:
+
+  1. FREE FOR STUDENTS & ACADEMIC RESEARCHERS (Section 1):
+     Governed by the PolyForm Noncommercial License 1.0.0 (for software, code,
+     quantum circuits, and algorithms) and CC BY-NC 4.0 (for curated datasets
+     and documentation).
+
+  2. STRICT CORPORATE EXCLUSION & COMMERCIAL LICENSE (Section 2):
+     All for-profit corporations, commercial laboratories, pharmaceutical/biotech
+     companies, clinical software vendors, and quantum hardware/cloud providers
+     are strictly excluded from Section 1 and require an executed commercial
+     license agreement with the Author even for internal R&D, evaluation, or
+     hardware benchmarking.
+
+================================================================================
+SECTION 1: NON-COMMERCIAL / STUDENT & ACADEMIC RESEARCH LICENSE
+           PolyForm Noncommercial License 1.0.0
+           https://polyformproject.org/licenses/noncommercial/1.0.0
+================================================================================
+(Applicable exclusively to individual students, academic researchers, hobbyists,
+and non-profit educational/research institutions. Accompanying datasets and
+documentation are concomitantly licensed under Creative Commons Attribution-
+NonCommercial 4.0 International, https://creativecommons.org/licenses/by-nc/4.0/)
+
+Acceptance:
+In order to get any license under these terms, you must agree to them as both
+strict obligations and conditions to all your licenses.
+
+Copyright License:
+The licensor grants you a copyright license for the software to do everything
+you might do with the software that would otherwise infringe the licensor's
+copyright in it for any permitted purpose. However, you may only distribute the
+software according to Distribution License below, and you may only make changes
+or new works based on the software according to Changes and New Works License
+below.
+
+Distribution License:
+The licensor grants you an additional copyright license to distribute copies of
+the software. Your license to distribute covers distributing the software with
+changes and new works permitted by Changes and New Works License below.
+
+Notices:
+You must ensure that anyone who gets a copy of any part of the software from
+you, with or without changes, also gets the text of this license or a link to
+<https://polyformproject.org/licenses/noncommercial/1.0.0> and the required
+attribution notice: Copyright (c) 2026 Rehan Arqam.
+
+Changes and New Works License:
+The licensor grants you an additional copyright license to make changes and new
+works based on the software for any permitted purpose.
+
+Patent License:
+The licensor grants you a patent license for the software that covers patent
+claims the licensor can license, or becomes able to license, that you would
+infringe by using the software.
+
+Noncommercial Uses Only (Permitted Purpose):
+Any noncommercial purpose—specifically personal study, student coursework,
+university teaching, and non-profit academic scientific research—is a permitted
+purpose.
+
+Fair Use:
+You may have "fair use" rights for the software under the law. These terms do
+not limit them.
+
+No Other Rights:
+These terms do not allow you to sublicense or transfer any of your licenses to
+anyone else, or prevent the licensor from granting licenses to anyone else.
+These terms do not imply any other licenses.
+
+Patent Defense:
+If you make any written claim that the software infringes or contributes to
+infringement of any patent, your patent license for the software granted under
+these terms ends immediately. If your company or institution makes such a claim,
+your patent license ends immediately for work on its behalf.
+
+Violations:
+The first time you are notified in writing that you have violated any of these
+terms, or done anything with the software not covered by your licenses, your
+licenses can nonetheless continue if you come into full compliance with these
+terms, and take practical steps to correct past violations, within 32 days of
+receiving notice. Otherwise, all your licenses end immediately.
+
+No Liability:
+As far as the law allows, the software comes as is, without any warranty or
+condition, and the licensor will not be liable to you for any damages arising
+out of these terms or the use or nature of the software, under any kind of
+legal claim.
+
+================================================================================
+SECTION 2: COMMERCIAL HARDWARE, PHARMACEUTICAL & PROPRIETARY LICENSE
+================================================================================
+Licensor / Exclusive Copyright Holder: Rehan Arqam (rarqam14@gmail.com)
+
+Under no circumstances is any license granted under Section 1 to any for-profit
+corporation, company, startup, commercial enterprise, vendor, or contractor
+acting on their behalf. Any use by a for-profit entity requires a separate,
+executed commercial licensing agreement with the Licensor, including for:
+
+  a. Commercial Quantum Cloud & Hardware Deployment: Deployment on or
+     integration with commercial quantum cloud platforms (e.g., IBM Quantum,
+     AWS Braket, Microsoft Azure Quantum, Google Quantum AI, Rigetti, IonQ,
+     Quantinuum, Pasqal, QuEra) as a customer-facing or vendor-internal solver,
+     scheduler, benchmarking, or TLS defect-screening service.
+  b. Pharmaceutical, Biotech & Clinical Software Integration: Use in commercial
+     drug discovery pipelines, PK-PD / PBPK modeling suites, hospital
+     polypharmacy scheduling platforms, clinical decision support systems
+     (CDSS), EHR/EMR modules (e.g., Epic, Oracle Cerner), or commercial DDI
+     engines.
+  c. Operating Systems, Compilers, Calibration & Firmware: Integration of the
+     three-stage preconditioner, HH-CD-QAOA topology embedding, or closed-loop
+     TLS readout screening into commercial quantum operating systems, compilers,
+     transpilers, firmware, or automated qubit calibration stacks.
+  d. Hardware & Software Bundling / SaaS: Sale, pre-loading, SaaS hosting, or
+     bundling of QClearance or its algorithmic methods with commercial quantum
+     processors, control electronics, QSDKs, or healthcare analytics products.
+  e. Internal Corporate R&D & Benchmarking: Internal evaluation, testing,
+     laboratory benchmarking, device certification, quality assurance, or
+     competitive prototyping by employees or agents of any for-profit entity.
+
+--------------------------------------------------------------------------------
+COMMERCIAL LICENSING & INQUIRIES
+--------------------------------------------------------------------------------
+For commercial licensing terms, enterprise permissions, and royalty agreements:
+Author / Licensing Office: Rehan Arqam (rarqam14@gmail.com)

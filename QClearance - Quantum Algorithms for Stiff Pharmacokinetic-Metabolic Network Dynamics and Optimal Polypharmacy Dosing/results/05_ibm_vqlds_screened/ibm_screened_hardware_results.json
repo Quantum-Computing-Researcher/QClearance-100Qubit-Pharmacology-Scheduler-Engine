@@ -1,0 +1,108 @@
+{
+  "backend_name": "ibm_marrakesh",
+  "job_id": "dblfd858ft8s738t086g",
+  "shots_per_circuit": 16384,
+  "selected_physical_qubits": [
+    44,
+    43,
+    56,
+    63,
+    64,
+    65,
+    77,
+    85
+  ],
+  "per_bit_empirical_e01": [
+    0.01678,
+    0.01288,
+    0.01147,
+    0.01355,
+    0.02368,
+    0.01392,
+    0.00751,
+    0.01404
+  ],
+  "per_bit_empirical_e10": [
+    0.01807,
+    0.0119,
+    0.01312,
+    0.01434,
+    0.02234,
+    0.01398,
+    0.00635,
+    0.01477
+  ],
+  "mean_8q_readout_error_0_to_1": 0.01423,
+  "mean_8q_readout_error_1_to_0": 0.01436,
+  "osimertinib_Cmax_uM": {
+    "raw": 0.14091,
+    "ro": 0.14597,
+    "zne": 0.15765
+  },
+  "osimertinib_AUC_0_72h": {
+    "raw": 5.5147,
+    "ro": 5.4013,
+    "zne": 4.823
+  },
+  "az5104_AUC_0_72h": {
+    "raw": 2.1798,
+    "ro": 2.173,
+    "zne": 2.045
+  },
+  "az7550_AUC_0_72h": {
+    "raw": 1.6828,
+    "ro": 1.6675,
+    "zne": 1.5205
+  },
+  "r2_vs_classical_radau": {
+    "osimertinib": {
+      "raw_r2_vs_radau": 0.6766,
+      "ro_r2_vs_radau": 0.7259,
+      "zne_r2_vs_radau": 0.8455
+    },
+    "az5104": {
+      "raw_r2_vs_radau": 0.3229,
+      "ro_r2_vs_radau": 0.4189,
+      "zne_r2_vs_radau": 0.4941
+    },
+    "az7550": {
+      "raw_r2_vs_radau": 0.089,
+      "ro_r2_vs_radau": 0.1451,
+      "zne_r2_vs_radau": 0.3709
+    }
+  },
+  "top_basis_states_fold1": [
+    [
+      "10000100",
+      774
+    ],
+    [
+      "00000000",
+      616
+    ],
+    [
+      "00000110",
+      578
+    ],
+    [
+      "01000100",
+      283
+    ],
+    [
+      "00100001",
+      200
+    ],
+    [
+      "00001101",
+      181
+    ],
+    [
+      "01100001",
+      178
+    ],
+    [
+      "01100101",
+      177
+    ]
+  ]
+}

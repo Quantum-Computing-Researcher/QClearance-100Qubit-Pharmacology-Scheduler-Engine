@@ -1,0 +1,87 @@
+{
+  "backend_name": "ibm_marrakesh",
+  "job_id": "dblf0qhkbkrc73cnk6mg",
+  "shots_per_circuit": 4096,
+  "vqlds_8q_hardware_osimertinib": {
+    "mean_8q_readout_error_0_to_1": 0.05484,
+    "mean_8q_readout_error_1_to_0": 0.0545,
+    "raw_Cmax_uM": 0.16311,
+    "ro_Cmax_uM": 0.18223,
+    "zne_Cmax_uM": 0.19781,
+    "raw_AUC_0_72h": 5.7995,
+    "ro_AUC_0_72h": 5.5292,
+    "zne_AUC_0_72h": 4.8002,
+    "osimertinib_raw_r2_vs_radau": 0.4485,
+    "osimertinib_ro_r2_vs_radau": 0.295,
+    "osimertinib_zne_r2_vs_radau": 0.1197,
+    "az5104_raw_r2_vs_radau": -0.279,
+    "az5104_ro_r2_vs_radau": -0.4219,
+    "az5104_zne_r2_vs_radau": -1.4018,
+    "az7550_raw_r2_vs_radau": -1.0713,
+    "az7550_ro_r2_vs_radau": -1.796,
+    "az7550_zne_r2_vs_radau": -2.5189
+  },
+  "vqlds_8q_top_basis_states_fold1": [
+    [
+      "10000100",
+      101
+    ],
+    [
+      "00000000",
+      97
+    ],
+    [
+      "00000110",
+      83
+    ],
+    [
+      "00100001",
+      67
+    ],
+    [
+      "01000001",
+      64
+    ],
+    [
+      "11100001",
+      61
+    ],
+    [
+      "00000001",
+      53
+    ],
+    [
+      "10000001",
+      47
+    ]
+  ],
+  "hh_cd_qaoa_hardware": {
+    "10q": {
+      "raw_mean_ising_energy": -2.6154,
+      "fold3_mean_ising_energy": -1.5502,
+      "zne_mean_ising_energy": -3.148,
+      "best_sampled_energy": -5.8727,
+      "raw_mean_ar": 0.744,
+      "zne_mean_ar": 0.7858,
+      "best_sample_ar": 1.0,
+      "most_frequent_bitstring": "1010101010",
+      "unique_bitstrings_sampled": 711
+    },
+    "50q": {
+      "raw_mean_ising_energy": -9.592,
+      "best_sampled_energy": -28.6506,
+      "raw_mean_ar": 0.6827,
+      "best_sample_ar": 0.9703,
+      "most_frequent_bitstring": "01011010101010110011010111101010111010110001100010",
+      "unique_bitstrings_sampled": 4096
+    },
+    "100q": {
+      "raw_mean_ising_energy": -10.0674,
+      "best_sampled_energy": -35.0201,
+      "raw_mean_ar": 0.6128,
+      "best_sample_ar": 0.7989,
+      "most_frequent_bitstring": "1101001111000011101011010110011100101011010111010011011001101011101101111010100001111110000100001011",
+      "unique_bitstrings_sampled": 4096
+    }
+  }
+}

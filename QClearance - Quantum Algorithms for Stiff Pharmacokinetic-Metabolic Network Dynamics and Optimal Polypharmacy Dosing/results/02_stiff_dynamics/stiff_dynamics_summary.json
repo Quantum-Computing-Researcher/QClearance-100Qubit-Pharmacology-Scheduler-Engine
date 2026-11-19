@@ -1,0 +1,115 @@
+{
+  "jacobian_stiffness_ratio": 13048.82,
+  "condition_number_8q_raw": 1672059.85,
+  "condition_number_8q_nondim": 1262559.26,
+  "condition_number_8q_preconditioned": 44.55,
+  "vqlds_optimization": {
+    "unpreconditioned_final_cost": 0.820984,
+    "unpreconditioned_iterations": 900,
+    "preconditioned_final_cost": 0.019907,
+    "preconditioned_iterations": 900,
+    "carleman_exact_vs_radau_osi_r2": 0.9985,
+    "carleman_exact_vs_radau_az5104_r2": 0.9998,
+    "carleman_exact_vs_radau_az7550_r2": 0.9998
+  },
+  "circuit_statistics": {
+    "n_qubits": 8,
+    "topology": "1D_nearest_neighbor_multiresolution_0_SWAP",
+    "circuit_depth": 33,
+    "cx_gate_count": 56,
+    "ry_gate_count": 136,
+    "core_4q_pauli_strings": 114
+  },
+  "osimertinib_parent_pk": {
+    "chembl_reference_Cmax_uM": 0.179535,
+    "chembl_reference_Tmax_h": 6.0,
+    "radau": {
+      "Cmax": 0.15898,
+      "Tmax_h": 6.97,
+      "AUC_0_72h": 4.7405
+    },
+    "vqlds_unpreconditioned": {
+      "Cmax": 0.00277,
+      "Tmax_h": 25.55,
+      "AUC_0_72h": 0.0382
+    },
+    "noiseless_statevector": {
+      "Cmax": 0.14441,
+      "Tmax_h": 9.29,
+      "AUC_0_72h": 4.689
+    },
+    "qpu_raw": {
+      "Cmax": 0.13806,
+      "Tmax_h": 9.29,
+      "AUC_0_72h": 5.2115
+    },
+    "qpu_mitigated": {
+      "Cmax": 0.14449,
+      "Tmax_h": 9.29,
+      "AUC_0_72h": 4.8067
+    },
+    "r2_unpreconditioned_vs_radau": -1.4261,
+    "r2_noiseless_vs_radau": 0.9496,
+    "r2_qpu_raw_vs_radau": 0.8146,
+    "r2_qpu_mitigated_vs_radau": 0.9261
+  },
+  "az5104_toxic_metabolite_pk": {
+    "radau": {
+      "Cmax": 0.0392,
+      "Tmax_h": 41.81,
+      "AUC_0_72h": 2.151
+    },
+    "noiseless_statevector": {
+      "Cmax": 0.03817,
+      "Tmax_h": 39.48,
+      "AUC_0_72h": 2.0313
+    },
+    "qpu_raw": {
+      "Cmax": 0.04002,
+      "Tmax_h": 55.74,
+      "AUC_0_72h": 2.137
+    },
+    "qpu_mitigated": {
+      "Cmax": 0.04021,
+      "Tmax_h": 55.74,
+      "AUC_0_72h": 2.0789
+    },
+    "r2_unpreconditioned_vs_radau": -6.4884,
+    "r2_noiseless_vs_radau": 0.9242,
+    "r2_qpu_raw_vs_radau": 0.6433,
+    "r2_qpu_mitigated_vs_radau": 0.9092
+  },
+  "az7550_active_metabolite_pk": {
+    "radau": {
+      "Cmax": 0.02738,
+      "Tmax_h": 44.13,
+      "AUC_0_72h": 1.5031
+    },
+    "noiseless_statevector": {
+      "Cmax": 0.02652,
+      "Tmax_h": 53.42,
+      "AUC_0_72h": 1.4142
+    },
+    "qpu_raw": {
+      "Cmax": 0.02761,
+      "Tmax_h": 37.16,
+      "AUC_0_72h": 1.5568
+    },
+    "qpu_mitigated": {
+      "Cmax": 0.0284,
+      "Tmax_h": 48.77,
+      "AUC_0_72h": 1.4342
+    },
+    "r2_unpreconditioned_vs_radau": -6.1649,
+    "r2_noiseless_vs_radau": 0.922,
+    "r2_qpu_raw_vs_radau": 0.5968,
+    "r2_qpu_mitigated_vs_radau": 0.8134
+  },
+  "ritonavir_ddi_impact": {
+    "baseline_AUC_0_72h": 4.7405,
+    "inhibited_AUC_0_72h_radau": 7.9535,
+    "inhibited_AUC_0_72h_vqlds_mitigated": 6.2532,
+    "r2_ddi_noiseless": 0.6489,
+    "r2_ddi_qpu_mitigated": 0.6366
+  }
+}
