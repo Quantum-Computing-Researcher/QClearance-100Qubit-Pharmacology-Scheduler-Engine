@@ -56,6 +56,25 @@ QClearance is a hardware-co-designed quantum framework that resolves both bottle
 4. **Heavy-Hex Counterdiabatic QAOA (`HH-CD-QAOA`):**  
    Embeds dominant CYP3A4 interaction conflicts natively onto degree-$\le 3$ Heavy-Hex subgraphs. Implements single-qubit counterdiabatic gauge rotations derived from Bethe mean-field cavity theory, achieving a $93.78\%$ reduction in liver DDI conflict while eliminating **$17.25\times$** two-qubit `CZ` gates at 100 qubits ($492$ vs. $8,487$).
 
+### Table 1. Curated 10-Drug Cardio-Oncology CYP3A4 Polypharmacy Parameters & Optimal Chrono-Clearance Schedule
+
+To construct a clinically grounded combinatorial scheduling benchmark, we parameterized a 10-drug cardio-oncology interaction network anchored on oral **osimertinib** (`CHEMBL3353410`) alongside common cardiovascular, anticoagulant, lipid-lowering, and anti-infective co-medications that share hepatic CYP3A4 clearance. Potencies ($K_i$ or median $\mathrm{IC}_{50}$), physiological plasma concentrations $[I]$, dimensionless competitive inhibition ratios $[I]/K_i$, and clinical elimination half-lives ($t_{1/2}$) were curated from ChEMBL 34 numeric bioassays and clinical pharmacokinetic literature, mapping each co-medication's metabolic pressure onto Ising interaction couplings $J_{0,j}$.
+
+Solving this interaction Hamiltonian via `HH-CD-QAOA` (validated on live `ibm_marrakesh` hardware with best-sample approximation ratio $\mathrm{AR} = 1.0000$) reveals a clear pharmacokinetic segregation principle: isolating the three most potent CYP3A4 competitors—**ketoconazole** ($[I]/K_i = 15.0$, $t_{1/2} = 3.3\,\mathrm{h}$), **ritonavir** ($[I]/K_i = 3.8$, $t_{1/2} = 4.0\,\mathrm{h}$), and **apixaban** ($[I]/K_i = 0.899$, $t_{1/2} = 12.0\,\mathrm{h}$)—to **20:00 Evening** administration. Because ketoconazole and ritonavir undergo $>3\text{--}4$ elimination half-lives during the 12-hour overnight interval prior to **08:00 Morning** osimertinib dosing ($t_{1/2} = 55.0\,\mathrm{h}$), their peak hepatic overlap is minimized, reducing the concurrent model CYP3A4 conflict score by **$93.78\%$** ($21.01 \to 1.31$).
+
+| Node | ChEMBL ID | Drug Name | Clinical Role | Potency ($\mu\mathrm{M}$) | $[I]$ ($\mu\mathrm{M}$) | $[I]/K_i$ | $t_{1/2}$ ($\mathrm{h}$) | $J_{0,j}$ | Optimal Window |
+| :--- | :--- | :--- | :--- | ---: | ---: | ---: | ---: | ---: | :---: |
+| D1 | `CHEMBL3353410` | Osimertinib | EGFR-TKI oncology anchor | 3.000 | 0.180 | 0.060 | 55.0 | — | **08:00 Morning** |
+| D2 | `CHEMBL157101` | Ketoconazole | Strong CYP3A4 antifungal | 0.030 | 0.450 | 15.000 | 3.3 | 0.7475 | **20:00 Evening** |
+| D3 | `CHEMBL163` | Ritonavir | Antiviral protease booster | 0.100 | 0.380 | 3.800 | 4.0 | 0.4081 | **20:00 Evening** |
+| D4 | `CHEMBL729` | Lopinavir | Antiviral co-medication | 0.705 | 0.520 | 0.738 | 6.0 | 0.1356 | 08:00 Morning |
+| D5 | `CHEMBL23` | Diltiazem | Cardiac $\mathrm{Ca^{2+}}$ blocker | 1.350 | 0.250 | 0.185 | 3.5 | 0.0745 | 08:00 Morning |
+| D6 | `CHEMBL36148` | (S)-Verapamil | Antiarrhythmic / Antihypertensive | 2.180 | 0.210 | 0.096 | 4.0 | 0.0540 | 08:00 Morning |
+| D7 | `CHEMBL1741` | Clarithromycin | Macrolide antibiotic | 5.490 | 1.150 | 0.210 | 5.0 | 0.1322 | 08:00 Morning |
+| D8 | `CHEMBL231779` | Apixaban | Factor Xa anticoagulant | 0.200 | 0.180 | 0.899 | 12.0 | 0.2555 | **20:00 Evening** |
+| D9 | `CHEMBL1487` | Atorvastatin | Lipid-lowering statin | 5.450 | 0.045 | 0.008 | 14.0 | 0.0178 | 08:00 Morning |
+| D10 | `CHEMBL655` | Midazolam | Peri-procedural sedative | 41.720 | 0.384 | 0.009 | 2.5 | 0.0472 | 08:00 Morning |
+
 ---
 
 ## 3. Live Superconducting Hardware Validation (`ibm_marrakesh`)
@@ -73,6 +92,20 @@ Experiments were executed on the **156-qubit IBM Heron r2** superconducting proc
 ### Closed-Loop TLS Readout Defect Screening
 * **The Problem:** In Job `dblf0qhkbkrc73cnk6mg`, physical qubits Q86 and Q87 were afflicted by microscopic Two-Level System (TLS) defect noise. Q86 dephasing time collapsed to $T_2 = 10.38\,\mu\mathrm{s}$, causing empirical readout flip errors to surge to $P(1|0) = 22.75\%$ on Q86 and $14.43\%$ on Q87 (mean 8-qubit readout error $5.48\%$). Noise amplification during Richardson ZNE corrupted fine-scale metabolite amplitudes.
 * **The Solution:** Our closed-loop screening protocol (`05_ibm_vqlds_readout_screened.py`) screened the live calibration manifold, excluded qubits with $>4\%$ error, and selected the low-noise chain `[44, 43, 56, 63, 64, 65, 77, 85]`. Readout error dropped to $1.42\%$, restoring monotonic ZNE mitigation to $R^2 = 0.8455$ and recovering clinical exposure within $1.16\%$--$4.93\%$ of implicit Radau IIA classical integration.
+
+### Table 3. Conceptual & Computational Comparison: Classical Implicit Radau IIA vs. QClearance Framework
+
+Evaluating QClearance alongside classical stiff integrators highlights a fundamental architectural distinction in computational pharmacology. High-order implicit Runge–Kutta solvers such as **Radau IIA** remain the gold-standard numerical benchmark for continuous stiff ODE trajectory integration, delivering exact reference plasma and receptor curves for a single fixed regimen. However, implicit ODE integrators are inherently passive evaluators—they integrate a given dosing schedule forward in time but cannot natively search across $2^N$ discrete circadian administration windows.
+
+Conversely, while classical mixed-integer programming (MIP) or specialized heuristics readily solve static quadratic binary optimization (QUBO) formulations at small-to-moderate scale, coupling an exhaustive brute-force search over $2^{50} \approx 1.13 \times 10^{15}$ dosing schedules to continuous ODE evaluations would require $\sim 35,800$ continuous CPU years. **QClearance** demonstrates how preconditioned variational linear solvers (8q Brickwall VQLS) and topology-native counterdiabatic optimization (`HH-CD-QAOA`, executed live across 10–100 qubits on IBM Heron r2 `ibm_marrakesh`) can be co-designed inside one unified framework bridging both continuous stiff dynamics and discrete combinatorial scheduling.
+
+| Evaluation Dimension | Classical Implicit Radau IIA | QClearance Framework (`HH-CD-QAOA` / VQLS) |
+| :--- | :--- | :--- |
+| **Mathematical Paradigm** | Continuous stiff ODE integration via 3-stage Runge–Kutta | Variational quantum linear solver (VQLS) + adiabatic Ising QAOA |
+| **Polypharmacy Scheduling** | **Incapable**; evaluates given curves but cannot search $2^N$ schedules | **Native discrete optimizer**; maps $2^N$ dosing schedules to quantum spin states |
+| **50-Drug Exhaustive Search** | Intractable ($\approx 1.13\times 10^{15}$ runs; $\sim 35,800$ CPU years) | Native quantum search over $2^{50}$ states on Heron Heavy-Hex lattice |
+| **Hepatic CYP3A4 Conflict** | Passive numerical evaluation of inhibition | **$93.78\%$ conflict reduction** ($21.01 \to 1.31$) via optimal circadian segregation |
+| **Hardware Demonstration** | Classical CPU / supercomputer only | **Live 156-qubit Heron r2** (`ibm_marrakesh`) across 10–100 qubits |
 
 ---
 
