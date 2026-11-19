@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/qclearance-banner.png" alt="QClearance: Pharmacokinetics, QAOA, IBM 100-Qubit Scheduler Engine" width="100%">
+</p>
+
 # QClearance: Quantum Algorithms for Stiff Pharmacokinetic–Metabolic Network Dynamics and Polypharmacy Dosing
 
 [![Qiskit 2.5.2](https://img.shields.io/badge/Qiskit-2.5.2-613399.svg)](https://qiskit.org/)
@@ -96,6 +100,8 @@ All experimental parameters are derived from open, audited chemical biology and 
 QClearance-100Qubit-Pharmacology-Scheduler-Engine/
 ├── README.md                                          # This documentation
 ├── LICENSE                                            # Dual License (PolyForm Noncommercial 1.0.0 / Commercial)
+├── assets/
+│   └── qclearance-banner.png                          # Repository banner & GitHub Social Preview (1280x640)
 ├── Dataset Files details in one frame.xlsx            # Matrix dimensions and row counts of all 12 raw source files
 ├── datasets json format/                              # Raw source files in CSV/JSON format
 │   ├── 01_TDC_ADME_Clearance/                        # Hepatocyte, microsome, half-life, and Veith tables
